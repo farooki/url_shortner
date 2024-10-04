@@ -1,0 +1,22 @@
+<%= form_with(model: url_shortner) do |form| %>
+  <% if url_shortner.errors.any? %>
+    <div style="color: red">
+      <h2><%= pluralize(url_shortner.errors.count, "error") %> prohibited this url_shortner from being saved:</h2>
+
+      <ul>
+        <% url_shortner.errors.each do |error| %>
+          <li><%= error.full_message %></li>
+        <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div>
+    <%= form.label :given_url, style: "display: block" %>
+    <%= form.text_field :given_url %>
+  </div>
+  <br>
+  <div>
+    <%= form.submit %>
+  </div>
+<% end %>

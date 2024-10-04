@@ -1,0 +1,11 @@
+<% content_for :title, "New url shortner" %>
+
+<h1>New url shortner</h1>
+
+<%= render "form", url_shortner: @url_shortner %>
+
+<br>
+
+<div>
+  <%= link_to "Back to url shortners", url_shortners_path %>
+</div>

@@ -1,0 +1,7 @@
+<%= @url_shortners.count %>
+<% @url_shortners.each do |url| %>
+  <%= url.title || url.given_url %> - <%= url.frequency %>
+  <hr>
+<% end %>
+
+<%= link_to "New url shortner", new_url_shortner_path %>

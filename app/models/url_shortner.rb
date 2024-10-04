@@ -1,0 +1,2 @@
+class UrlShortner < ApplicationRecord
+end

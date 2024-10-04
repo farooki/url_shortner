@@ -1,0 +1,13 @@
+# Read about fixtures at https://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  given_url: MyString
+  generated_url,: MyString
+  frequency: 1
+  title: MyString
+
+two:
+  given_url: MyString
+  generated_url,: MyString
+  frequency: 1
+  title: MyString
